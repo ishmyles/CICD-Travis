@@ -1,13 +1,9 @@
-language: csharp
-dist: trusty
-mono: none
-dotnet: 1.0.1
+languange: csharp
+solution: TestWebApp.sln
 
-install:
-- dotnet restore
-
-script:
-- dotnet build
+install: 
+    - sudo apt-get install -y gtk-sharp2
+    - nuget restore TestWebApp.sln
 
 deploy:
     provider: azure_web_apps
