@@ -1,0 +1,9 @@
+languange: csharp
+solution: TestWebApp.sln
+
+install: 
+    - nuget restore TestWebApp.sln
+
+deploy:
+    provider: azure_web_apps
+    skip_cleanup: true
