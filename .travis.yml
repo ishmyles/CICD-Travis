@@ -1,9 +1,8 @@
 languange: csharp
-solution: TestWebApp.sln
-
+solution: TestWebApp/TestWebApp.sln
 install: 
     - sudo apt-get install -y gtk-sharp2
-    - nget restore TestWebApp.sln
+    - nuget restore TestWebApp.sln
 
 deploy:
     provider: azure_web_apps
