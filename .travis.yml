@@ -3,7 +3,7 @@ solution: TestWebApp.sln
 
 install: 
     - sudo apt-get install -y gtk-sharp2
-    - nuget restore TestWebApp.sln
+    - nget restore TestWebApp.sln
 
 deploy:
     provider: azure_web_apps
